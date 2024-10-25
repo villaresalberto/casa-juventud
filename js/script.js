@@ -34,9 +34,23 @@ playVideoButton.addEventListener('click', () => {
     video.play();  // Reproducir el video
 });
 
-// Al hacer clic en el botón para cerrar la imagen
-closeImageButton.addEventListener('click', () => {
-    imageContainer.classList.add('hidden');  // Ocultar la imagen
+
+// Obtener el botón de cierre del video
+const closeVideoButton = document.getElementById('closeVideoButton');
+
+// Al hacer clic en la "X" para cerrar el video
+closeVideoButton.addEventListener('click', () => {
+    video.pause();  // Pausa el video si está en reproducción
+    videoContainer.classList.add('hidden');  // Ocultar el video
     content.classList.remove('hidden');  // Mostrar de nuevo el contenido inicial (título y párrafo)
     playVideoButton.classList.remove('hidden');  // Volver a mostrar el botón de abrir video
 });
+
+// Obtener el botón de Google Maps
+const googleMapsButton = document.getElementById('googleMapsButton');
+
+// Al hacer clic en el botón para ir a Google Maps
+googleMapsButton.addEventListener('click', () => {
+    window.open("https://www.google.com/maps?q=37.691515,-3.814880", "_blank");  // Abre Google Maps en una nueva pestaña
+});
+

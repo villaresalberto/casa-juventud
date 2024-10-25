@@ -12,6 +12,26 @@ body {
     position: relative;
 }
 
+/* Botón de cierre en la esquina superior derecha */
+.close-button {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background-color: red;
+    color: white;
+    border: none;
+    font-size: 20px;
+    padding: 5px 10px;
+    cursor: pointer;
+    z-index: 10; /* Asegura que esté por encima del video */
+    border-radius: 50%;
+}
+
+.close-button:hover {
+    background-color: darkred;
+}
+
+
 /* Contenedor general */
 .container {
     background-color: rgba(0, 0, 0, 0.7); /* Fondo semi-transparente */
@@ -25,12 +45,14 @@ body {
     font-size: 4em;
     text-shadow: 5px 5px 10px #ff0000; /* Sombra roja espeluznante */
     animation: flicker 1.5s infinite alternate;
+    font-weight: lighter;
 }
 
 /* Subtítulo */
 .sub-title {
     font-size: 2.5em;
     color: #ffeb3b;
+    font-weight: lighter;
 }
 
 /* Efecto de parpadeo para el título */
@@ -78,9 +100,6 @@ button:hover {
     display: none;
 }
 
-.game-instructions {
-    font-size: 25px;
-}
 #videoContainer {
    margin-top: 20px;
     /* width: 56.25vh;  
@@ -134,21 +153,6 @@ img {
 }
 
 
-/*botón volver a inicio*/
-
-#closeImageButton {
-    display: block;
-    margin: 20px auto;
-    padding: 10px 20px;
-    background-color: #ff5e00;
-    color: white;
-    border: none;
-    border-radius: 5px;
-}
-
-#closeImageButton:hover {
-    background-color: #a73d00;
-}
 
 /* Neblina flotante para todo el body */
 body:before {
@@ -170,4 +174,23 @@ body:before {
     0% { opacity: 0.2; }
     50% { opacity: 0.4; }
     100% { opacity: 0.2; }
+}
+
+#buttonContainer {
+    display: flex;
+    justify-content: center; /* Centra ambos botones horizontalmente */
+    text-align: center;
+}
+
+#googleMapsButton {
+    margin-top: 10px; /* Añadir espacio entre la imagen y el botón */
+    padding: 10px 20px;
+    background-color: #ff5e00; /* Color de fondo de los botones */
+    border: none;
+    color: white;
+    cursor: pointer;
+    font-size: 16px;
+    display: block; /* Asegurar que el botón ocupe toda la línea debajo de la imagen */
+    margin-left: auto;
+    margin-right: auto; /* Centrará el botón debajo de la imagen */
 }
