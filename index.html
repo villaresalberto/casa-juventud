@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página con Video e Imagen</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Creepster&family=Nosifer&display=swap">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="icon" type="image/png" href="img/descarga.png">
+</head>
+<body>
+    <div class="container">
+        <div class="content">
+                <h1 class="main-title">JUEGA O MUERE</h1>
+                <h2 class="sub-title">PRUEBA 1: El Enigma del Parque</h2>
+        
+                <p class="game-instructions">
+                    Solo los valientes pueden pasar al siguiente nivel.<br> Resuelve el enigma y dirígete a donde las luces se apagan, 
+                    detrás del cuartel, donde las sombras acechan.
+                </p>
+            <button id="playVideoButton">Abrir Video</button>
+        </div>
+
+        <div id="videoContainer" class="hidden">
+            <video id="video" width="640" height="360" controls>
+                <source src="video/Casa Juventud.mp4" type="video/mp4">
+                Tu navegador no soporta la reproducción de video.
+            </video>
+        </div>
+  
+        <div id="imageButtonContainer" class="hidden">
+            <button id="showImageButton">Mostrar Imagen</button>
+        </div>
+
+        <div id="imageContainer" class="hidden">
+            <img id="image" src="img/casadelajuventud.jpg" alt="Imagen">
+            <button id="closeImageButton">Volver a Inicio</button>
+        </div>
+    </div>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
