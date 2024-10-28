@@ -10,13 +10,14 @@ body {
     color: #fff;
     text-align: center;
     position: relative;
-    overflow-y: scroll; /* Para tener scroll, pero esta escondido con el display : none de abaj en webkit*/
+    overflow: hidden;
+   /* overflow-y: scroll; *//* Para tener scroll, pero esta escondido con el display : none de abaj en webkit*/
 }
-
+/*
 body::-webkit-scrollbar {
-    display: none; /* Para navegadores basados en WebKit como Chrome y Safari */
+    display: none; /* Para navegadores basados en WebKit como Chrome y Safari 
 }
-
+*/
 /* Botón de cierre en la esquina superior derecha */
 .close-button {
     position: absolute;
