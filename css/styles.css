@@ -17,6 +17,7 @@ body {
 body::-webkit-scrollbar {
     display: none; /* Para navegadores basados en WebKit como Chrome y Safari 
 }
+
 */
 /* Botón de cierre en la esquina superior derecha */
 .close-button {
