@@ -1,6 +1,6 @@
 body {
     background-image: url(../img/rojo.gif);
-    background-size: cover;
+    background-size: contain;
     background-attachment: fixed;
     display: flex;
     justify-content: center;
@@ -130,6 +130,20 @@ img {
 
 /*tamaño vídeo movil*/
 @media (max-width: 768px) {
+    body {
+        background-image: url(../img/rojo.gif);
+        background-size: cover;
+        background-attachment: fixed;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        font-family: 'Creepster', cursive;
+        color: #fff;
+        text-align: center;
+        position: relative;
+    }
+
     video {
         width: 100%;  /* Ajustar el video al ancho del contenedor */
         height: 100%; /* Ajustar el video a la altura del contenedor */
