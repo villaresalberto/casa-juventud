@@ -116,8 +116,8 @@ button:hover {
 
 /*tamaño vídeo*/
 video {
-    width: 30%;  /* Ajustar el video al ancho del contenedor */
-    height: 30%; /* Ajustar el video a la altura del contenedor */
+    width: 40%;  /* Ajustar el video al ancho del contenedor */
+    height: 40%; /* Ajustar el video a la altura del contenedor */
     object-fit: cover;  /* Asegurar que el video cubra el contenedor manteniendo la proporción */
 }
 
