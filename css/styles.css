@@ -148,7 +148,15 @@ img {
         border-radius: 15px;
         box-shadow: 0 0 30px rgba(255, 0, 0, 0.7); /* Efecto de luz roja */
     }
+
+    #imageButtonContainer{
+        padding: 15px;
+
+    }
     
+    #showImageButton{
+        font-size: 30px;
+    }
     
 }
 

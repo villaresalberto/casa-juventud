@@ -15,11 +15,15 @@
                 <h2 class="sub-title">Jugaré, no abandonaré</h2>
         
             <button id="playVideoButton">CONTINUAR</button>
+            
         </div>
-
+<!-- Audio de fondo -->
+        <audio id="background-audio" loop>
+            <source src="audio/debussy-clairdelune.mp3" type="audio/mpeg">
+        </audio>
         <div id="videoContainer" class="hidden">
             <button id="closeVideoButton" class="close-button">X</button>
-            <video id="video" width="640" height="360">
+            <video id="video" width="640" height="360" muted controls>
                 <source src="video/Casa Juventud.mp4" type="video/mp4">
                 Tu navegador no soporta la reproducción de video.
             </video>

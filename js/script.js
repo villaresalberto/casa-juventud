@@ -38,6 +38,20 @@ playVideoButton.addEventListener('click', () => {
 // Obtener el botón de cierre del video
 const closeVideoButton = document.getElementById('closeVideoButton');
 
+var button = document.getElementById("playVideoButton");
+button.onclick = function() {
+
+
+var audio = document.getElementById("background-audio");
+
+    // Este bloque intenta reproducir el audio y maneja los errores
+    audio.play().then(() => {
+        console.log("Audio reproduciéndose");
+    }).catch(error => {
+        console.error("Error al reproducir el audio:", error);
+        // Si hay un error, puedes manejarlo aquí (por ejemplo, mostrar un mensaje o intentar otra acción)
+    });
+};
 // Al hacer clic en la "X" para cerrar el video
 closeVideoButton.addEventListener('click', () => {
     video.pause();  // Pausa el video si está en reproducción
@@ -46,6 +60,12 @@ closeVideoButton.addEventListener('click', () => {
     playVideoButton.classList.remove('hidden');  // Volver a mostrar el botón de abrir video
 });
 
+// Muestra la ubicación "Mostrar Ubicación"
+googleMapsButton.addEventListener('click', () => {
+    window.location.href = 'https://maps.app.goo.gl/YdrEDPcnh4mwwdwy8';
+});
+
+/*
 // Obtener el botón de Google Maps
 const googleMapsButton = document.getElementById('googleMapsButton');
 
@@ -53,4 +73,4 @@ const googleMapsButton = document.getElementById('googleMapsButton');
 googleMapsButton.addEventListener('click', () => {
     window.open("https://www.google.com/maps?q=37.691515,-3.814880", "_blank");  // Abre Google Maps en una nueva pestaña
 });
-
+*/
