@@ -92,7 +92,7 @@ button {
     font-size: 16px;
     margin: 10px;
     cursor: pointer;
-    background-color: #ff5e00;
+    background-color: #d60202;
     color: white;
     border: none;
     border-radius: 5px;
@@ -100,7 +100,7 @@ button {
 }
 
 button:hover {
-    background-color: #a73d00;
+    background-color: #700000;
 }
 
 .hidden {
@@ -190,7 +190,7 @@ img {
 #googleMapsButton {
     margin-top: 10px; /* Añadir espacio entre la imagen y el botón */
     padding: 10px 20px;
-    background-color: #ff5e00; /* Color de fondo de los botones */
+ /* Color de fondo de los botones */
     border: none;
     color: white;
     cursor: pointer;
@@ -198,7 +198,4 @@ img {
     display: block; /* Asegurar que el botón ocupe toda la línea debajo de la imagen */
     margin-left: auto;
     margin-right: auto; /* Centrará el botón debajo de la imagen */
-}
-#googleMapsButton:hover {
-    background-color: #a73d00;
 }
