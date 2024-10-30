@@ -108,13 +108,7 @@ button:hover {
 }
 
 #videoContainer {
-   margin-top: 20px;
-    /* width: 56.25vh;  
-    height: 100vh;  
-    background-color: black; 
-    display: flex;
-    justify-content: center;
-    align-items: center;*/
+    padding: 10px;
 }
 
 #imageContainer {
@@ -123,8 +117,8 @@ button:hover {
 
 /*tamaño vídeo*/
 video {
-    width: 40%;  /* Ajustar el video al ancho del contenedor */
-    height: 40%; /* Ajustar el video a la altura del contenedor */
+    width: 400px;  /* Ajustar el video al ancho del contenedor */
+    height: 500px; /* Ajustar el video a la altura del contenedor */
     object-fit: cover;  /* Asegurar que el video cubra el contenedor manteniendo la proporción */
 }
 
