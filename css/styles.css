@@ -108,7 +108,7 @@ button:hover {
 }
 
 #videoContainer {
-    padding: 10px;
+    padding: 5px;
 }
 
 #imageContainer {
@@ -117,9 +117,9 @@ button:hover {
 
 /*tamaño vídeo*/
 video {
-    width: 400px;  /* Ajustar el video al ancho del contenedor */
+    width: 500px;  /* Ajustar el video al ancho del contenedor */
     height: 500px; /* Ajustar el video a la altura del contenedor */
-    object-fit: cover;  /* Asegurar que el video cubra el contenedor manteniendo la proporción */
+    object-fit: contain;  /* Asegurar que el video cubra el contenedor manteniendo la proporción */
 }
 
 /*tamaño foto*/
