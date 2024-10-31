@@ -35,12 +35,13 @@ showImageButton.addEventListener('click', () => {
 
 // Al hacer clic en la "X" para cerrar el video
 closeVideoButton.addEventListener('click', () => {
-    video.pause();  // Pausa el video si está en reproducción
+    video.load();  // Pausa el video si está en reproducción
+    video.currentTime = 0; //Reiniciar el video desde el principio
     videoContainer.classList.add('hidden');  // Ocultar el video
     content.classList.remove('hidden');  // Mostrar de nuevo el contenido inicial (título y párrafo)
     playVideoButton.classList.remove('hidden');  // Volver a mostrar el botón de abrir video
-    audio.pause();  // Pausar el audio
-    audio.currentTime = 0;  // Reiniciar el audio para la próxima vez
+   /* audio.pause();  // Pausar el audio
+    audio.currentTime = 0;  // Reiniciar el audio para la próxima vez*/
 });
 
 // Muestra la ubicación en Google Maps
